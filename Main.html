@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
 	<title>Главная страница</title>
 	<style type="text/css">
 		/* Задний фон Паттерн светлое дерево */
@@ -29,8 +30,9 @@ min-width: 1590px;
     background-size:100px;
    	margin: 20px;
    width: 200px;
-   height: 700px;
+   height: 740px;
    border: 3px solid #2a1d13!important;
+   font-family: 'Underdog', cursive;
    }
    /* Верхний контейнер */
    .topConteiner{
@@ -38,8 +40,12 @@ min-width: 1590px;
     background-size:100px;
    	margin: 20px;
    width: 1150px;
-   height: 150px;
+   height: 180px;
    border: 3px solid #2a1d13!important;
+   font-family: 'Underdog', cursive;
+   text-align: center;
+   color: #B3B3B3;
+
    }
 
 /* Центральный контейнер */
@@ -50,6 +56,7 @@ min-width: 1590px;
    width: 1150px;
    height: 440px;
    border: 3px solid #2a1d13!important;
+   font-family: 'Underdog', cursive;
    }
 
    /* Таблица для левого контейнера типа GridRow  */
@@ -59,17 +66,57 @@ min-width: 1590px;
  
   margin: 10px;
   width: 180px;
-  height: 680px;
+  height: 720px;
   border: 4px solid black;
-
+  font-family: 'Underdog', cursive;
+  
    }
+   .TableTop{
+   	background: rgba(0, 0, 0,0.4);
+   	text-align: center;
+ 
+  margin: 10px;
+  width: 1130px;
+  height: 130px;
+  border: 4px solid black;
+  font-family: 'Underdog', cursive;
+   }
+
+   /* cyrillic */
+@font-face {
+  font-family: 'Underdog';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Underdog'), local('Underdog-Regular'), url(https://fonts.gstatic.com/s/underdog/v8/CHygV-jCElj7diMroWShWV82Nw.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Underdog';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Underdog'), local('Underdog-Regular'), url(https://fonts.gstatic.com/s/underdog/v8/CHygV-jCElj7diMroWSrWV82Nw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Underdog';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Underdog'), local('Underdog-Regular'), url(https://fonts.gstatic.com/s/underdog/v8/CHygV-jCElj7diMroWSlWV8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 	</style>
+
 </head>
 <body>
 	<!-- Главый контйнер который держит это всё -->
 	<div class="mainMAINBORDER">
 		<!-- Каменная рамка -->
-<div class="BgRamka" style="padding: 10px; width: 240px; height: 740px; float: left;">
+<div class="BgRamka" style="padding: 10px; width: 240px; height: 776px; float: left;">
 	<!-- Левая панель управления с кнопками навигации -->
 	<div class="leftConteiner">
 
@@ -109,10 +156,19 @@ min-width: 1590px;
 	</div>
 </div>
 <!-- Каменная рамка -->
-<div class="BgRamka" style="padding: 10px; width: 1190px; height: 190px; float: left;">
+<div class="BgRamka" style="padding: 10px; width: 1190px; height: 230px; float: left;">
 	<!-- Верхний контейнер -->
 	<div class="topConteiner">
-		
+		<table class="TableTop">
+			<tr>
+				<td>
+	<a href="https://dnd.wizards.com/" target="_blank">
+    	<img style="width: 350px;" src="C:\Users\Doomed\Desktop\Diplom\DND\img\DungeonsAndDragons.png" alt="Подземелья и Драконы">
+    	</a>
+		<p style="font-size: 18px;">Играя в D&D, вы берёте на себя роль искателя приключений: опытного воина, набожного жреца, коварного плута или волшебника, творящего заклинания. При помощи друзей и воображения вы способны отправиться навстречу приключениям, испытать себя в столкновении с опасностями и кровожадными чудовищами.</p>
+		       </td>
+		    </tr>
+		</table>
 	</div>
 </div>
 
@@ -120,6 +176,29 @@ min-width: 1590px;
 <div class="BgRamka" style="padding: 10px; width: 1190px; height: 480px; float: left;">
 	<!-- Центральный контейнер для информации(может показывыть персов) -->
 	<div class="centerConteiner">
+         <!-- Слайдшоу -->
+		<!-- <script type="text/javascript">
+    var images = new Array();
+    var i = 0;
+     
+    images[0] = './img/MyPers.png';
+    images[1] = './img/MyGames.png';
+    images[2] = './img/CreatePers.png';
+     
+    function viewImages() {
+        document.getElementById("img_main").src = images[i]; 
+        i++;
+        if (i == images.length) {
+            i = 0;
+        }
+        setTimeout("viewImages()",5000);
+    }   
+</script>
+ 
+<img src="" id="img_main">
+ 
+<script> viewImages(); </script>-->
+
 		
 	</div>
 </div>

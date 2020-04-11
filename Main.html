@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Главная страница</title>
+	<style type="text/css">
+		/* Задний фон Паттерн светлое дерево */
+		 body {
+     background: #c7b39b url(C:/Users/Doomed/Desktop/Diplom/img/PatternDerevo.jpg); /* Цвет фона и путь к файлу */
+     background-size:250px; 
+   }
+   /* Апалон держит конструкцию на своих плечах */
+   .mainMAINBORDER{
+
+min-width: 1590px;
+   }
+
+/* Каменная рамка */
+   .BgRamka{
+   	margin: 20px;
+   	 background: url("https://i.imgur.com/cTQz9m9.jpg");
+     background-size:auto;
+     border: 3px solid #2a1d13!important;
+     box-shadow: 1px 1px 3px 2px rgba(0,0,0,0.9)!important;
+   }
+   /* Левый контейнер */
+   .leftConteiner{
+   background: url("https://i.imgur.com/Q2QJbwB.jpg");
+    background-size:100px;
+   	margin: 20px;
+   width: 200px;
+   height: 700px;
+   border: 3px solid #2a1d13!important;
+   }
+   /* Верхний контейнер */
+   .topConteiner{
+   	 background: url("https://i.imgur.com/Q2QJbwB.jpg");
+    background-size:100px;
+   	margin: 20px;
+   width: 1150px;
+   height: 150px;
+   border: 3px solid #2a1d13!important;
+   }
+
+/* Центральный контейнер */
+   .centerConteiner{
+   	background: url("https://i.imgur.com/Q2QJbwB.jpg");
+    background-size:100px;
+   	margin: 20px;
+   width: 1150px;
+   height: 440px;
+   border: 3px solid #2a1d13!important;
+   }
+
+   /* Таблица для левого контейнера типа GridRow  */
+   .Tableleft{
+   	background: rgba(0, 0, 0,0.4);
+   	text-align: center;
+ 
+  margin: 10px;
+  width: 180px;
+  height: 680px;
+
+   }
+	</style>
+</head>
+<body>
+	<!-- Главый контйнер который держит это всё -->
+	<div class="mainMAINBORDER">
+		<!-- Каменная рамка -->
+<div class="BgRamka" style="padding: 10px; width: 240px; height: 740px; float: left;">
+	<!-- Левая панель управления с кнопками навигации -->
+	<div class="leftConteiner">
+
+
+		<!-- Очень нужная таблица-контейнер для левой панели -->
+		<table border="10px;"   class="Tableleft">
+			<!-- Кнопка Мои игры -->
+							
+  <tr >
+    <td>
+    	<a href="C:\Users\Doomed\Desktop\Diplom\MyGames.html">
+    	<img style="width: 150px;" src="C:\Users\Doomed\Desktop\Diplom\img\MyGames.png" alt="Мои игры">
+    	</a>
+    </td>  
+  </tr>
+  
+  <!-- Кнопка Создать игру -->
+  <tr>
+    <td>
+    	<img style="width: 150px;" src="C:\Users\Doomed\Desktop\Diplom\img\CreateGames.png" alt="Создать игру">
+    </td>
+  </tr>
+  <!-- Кнопка Мои персонажи -->
+  <tr>
+    <td>
+    	<img style="width: 150px;" src="C:\Users\Doomed\Desktop\Diplom\img\MyPers.png" alt="Создать игру">
+    </td>
+  </tr>
+  <!-- Кнопка Создать персонажа -->
+  <tr>
+    <td>
+    	<img style="width: 150px;" src="C:\Users\Doomed\Desktop\Diplom\img\CreatePers.png" alt="Создать игру">
+    </td>
+  </tr>
+  
+</table>
+	</div>
+</div>
+<!-- Каменная рамка -->
+<div class="BgRamka" style="padding: 10px; width: 1190px; height: 190px; float: left;">
+	<!-- Верхний контейнер -->
+	<div class="topConteiner">
+		
+	</div>
+</div>
+
+<!-- Всё та же каменная рамка.... -->
+<div class="BgRamka" style="padding: 10px; width: 1190px; height: 480px; float: left;">
+	<!-- Центральный контейнер для информации(может показывыть персов) -->
+	<div class="centerConteiner">
+		
+	</div>
+</div>
+
+</div>
+</body>
+</html>

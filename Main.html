@@ -20,37 +20,33 @@
 
 
 		<!-- Очень нужная таблица-контейнер для левой панели -->
-		<table  class="Tableleft">
-			<!-- Кнопка Мои игры -->
-							
-  <tr >
-    <td>
-    	<a href="C:\Users\Doomed\Desktop\Diplom\DND\MyGames.html">
-    	<img style="width: 150px;" src="C:\Users\Doomed\Desktop\Diplom\DND\img\MyGames.png" alt="Мои игры">
-    	</a>
-    </td>  
-  </tr>
+		<a href="C:\Users\Doomed\Desktop\Diplom\DND\MyGames.html">
+			<div class="Buttonleft" style="line-height: 100px;"> 
+    		    <div style="width: 170px;height: 75px; background: rgba(0,0,0,0.3);">
+    				<img style="width: 150px;" src="C:\Users\Doomed\Desktop\Diplom\DND\img\MyGames.png" alt="Мои игры">
+    			</div>
+  			 </div>
+  		 </a>
   
   <!-- Кнопка Создать игру -->
-  <tr>
-    <td>
-    	<img style="width: 150px;" src="C:\Users\Doomed\Desktop\Diplom\DND\img\CreateGames.png" alt="Создать игру">
-    </td>
-  </tr>
+ 			<div class="Buttonleft" style="line-height: 95px;"> 
+  				<div style="width: 170px;height: 75px; background: rgba(0,0,0,0.3);">
+    				<img style="width: 150px;" src="C:\Users\Doomed\Desktop\Diplom\DND\img\CreateGames.png" alt="Создать игру">
+    			</div>
+    		</div>
   <!-- Кнопка Мои персонажи -->
-  <tr>
-    <td>
-    	<img style="width: 150px;" src="C:\Users\Doomed\Desktop\Diplom\DND\img\MyPers.png" alt="Создать игру">
-    </td>
-  </tr>
+			<div class="Buttonleft" style="line-height: 95px;"> 
+ 				<div style="width: 170px;height: 75px; background: rgba(0,0,0,0.3);">
+    				<img style="width: 150px;" src="C:\Users\Doomed\Desktop\Diplom\DND\img\MyPers.png" alt="Создать игру">
+    			</div>
+    		</div>
   <!-- Кнопка Создать персонажа -->
-  <tr>
-    <td>
-    	<img style="width: 150px;" src="C:\Users\Doomed\Desktop\Diplom\DND\img\CreatePers.png" alt="Создать игру">
-    </td>
-  </tr>
+  			<div class="Buttonleft" style="line-height: 85px;"> 
+  				<div style="width: 170px;height: 75px; background: rgba(0,0,0,0.3);">
+    				<img style="width: 150px;" src="C:\Users\Doomed\Desktop\Diplom\DND\img\CreatePers.png" alt="Создать игру">
+    			</div>
+    		</div>
   
-</table>
 	</div>
 </div>
 <!-- Каменная рамка -->
@@ -139,24 +135,65 @@
     <!-- Третий контейнер для фото -->
    <div class="PhotoCenterConteiner" style="margin-top: 20px; margin-bottom: 10px; margin-left: 10px; margin-right: 10px;">
    	<div class="PhotoConteiner">
-   		
+   		<script type="text/javascript">
+    var images2 = new Array();
+    var b = 0;
+     
+    images2[0] = './img/ForgottenRealms.png';
+    images2[1] = './img/Eberron.png';
+    images2[2] = './img/Planescape.png';
+    images2[3] = './img/Ravenloft.png';
+    images2[4] = './img/DarkSun.png';
+     
+    function viewImages2() {
+        document.getElementById("img_main2").src = images2[b]; 
+        b++;
+        if (b == images2.length) {
+            b = 0;
+        }
+        setTimeout("viewImages2()",5000);
+    }   
+</script>
+   		<img src="" id="img_main2">
+   		<script> viewImages2(); </script>
    	</div>
    </div>
     <!-- Четвертый контейнер для фото -->
    <div class="PhotoCenterConteiner" style="margin-top: 20px; margin-bottom: 10px; margin-left: 10px; margin-right: 50px;" >
    	<div class="PhotoConteiner">
-   		
+   		<script type="text/javascript">
+    var images3 = new Array();
+    var v = 0;
+     
+    images3[0] = './img/Master1.png';
+    images3[1] = './img/Master2.png';
+    images3[2] = './img/Master3.png';
+    images3[3] = './img/Master4.png';
+    images3[4] = './img/Master5.png';
+    images3[5] = './img/Master6.png';
+   
+     
+    function viewImages3() {
+        document.getElementById("img_main3").src = images3[v]; 
+        v++;
+        if (v == images3.length) {
+            v = 0;
+        }
+        setTimeout("viewImages3()",5000);
+    }   
+</script>
+   		<img src="" id="img_main3">
+   		<script> viewImages3(); </script>
    	</div>
    </div>
 <div class="TextUnderPhotoCenterConteiner" style="margin-bottom: 10px; margin-left: 50px; margin-right: 10px;">
-	<div class="TextUnderPhotoCenter"> 
-		<div class="TextShadowBox" style="line-height: 110px;">
-			<img style="width: 120px; " src="./img/Race.png" alt="Расы">
-			
+	<a href="C:\Users\Doomed\Desktop\Diplom\DND\Races.html">
+		<div class="TextUnderPhotoCenter"> 
+			<div class="TextShadowBox" style="line-height: 110px;">
+				<img style="width: 120px; " src="./img/Race.png" alt="Расы">
+			</div>			      		
 		</div>
-		
-	      		
-	</div>
+	</a>
 </div>
 <div class="TextUnderPhotoCenterConteiner" style="margin-bottom: 10px; margin-left: 10px; margin-right: 10px;">
 	<div class="TextUnderPhotoCenter"> 

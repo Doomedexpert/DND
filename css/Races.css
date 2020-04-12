@@ -1,0 +1,69 @@
+ body {
+     background: #c7b39b url("C:/Users/Doomed/Desktop/Diplom/DND/img/mr.jpg"); /* Цвет фона и путь к файлу */
+     background-size:550px; 
+   }
+   /* Апалон держит конструкцию на своих плечах */
+   .mainMAINBORDER{
+
+min-width: 1590px;
+   }
+
+/* Каменная рамка */
+   .BgRamka{
+    margin: 20px;
+     background: url("https://i.imgur.com/cTQz9m9.jpg");
+     background-size:auto;
+     border: 3px solid #2a1d13!important;
+     box-shadow: 1px 1px 3px 2px rgba(0,0,0,0.9)!important;
+   }
+   /* Левый контейнер */
+   .topConteiner{
+   background: url("https://i.imgur.com/Q2QJbwB.jpg");
+    background-size:100px;
+   	margin: 20px;
+   width: 1495px;
+   height: 105px;
+   border: 3px solid #2a1d13!important;
+   font-family: 'Underdog', cursive;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) inset; 
+   }
+
+    /* Центральный контейнер */
+   .centerConteiner{
+   background: url("https://i.imgur.com/Q2QJbwB.jpg");
+    background-size:100px;
+    margin: 20px;
+   width: 1500px;
+  
+   border: 3px solid #2a1d13!important;
+   font-family: 'Underdog', cursive;
+    box-shadow: 0 0 500px rgba(0, 0, 0, 0.9) inset; 
+   }
+
+   .centerConteiner1{
+   background: url("https://i.imgur.com/Q2QJbwB.jpg");
+    background-size:100px;
+    margin: 10px;
+   width: 1420px;
+  
+   border: 3px solid #2a1d13!important;
+   font-family: 'Underdog', cursive;
+    box-shadow: 0 0 500px rgba(0, 0, 0, 0.9) inset; 
+    
+
+   }
+   .line{
+    line-height: 100px;
+   }
+
+   .ButtonTop{
+    float: right;
+    margin: 10px;
+    float: left;
+    width: 345px;
+    height: 75px;
+    
+    border: 3px solid #2a1d13!important;  
+    text-align: center;
+    background: url("https://i.imgur.com/cTQz9m9.jpg");
+    box-shadow: 1px 1px 3px 2px rgba(0,0,0,0.9)!important;

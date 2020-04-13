@@ -79,3 +79,7 @@ min-width: 1590px;
 
 
     }
+    a {
+ color: #B3B3B3 !important;
+  text-decoration: none
+}

@@ -67,3 +67,15 @@ min-width: 1590px;
     text-align: center;
     background: url("https://i.imgur.com/cTQz9m9.jpg");
     box-shadow: 1px 1px 3px 2px rgba(0,0,0,0.9)!important;
+  }
+    .TableTDDragonborn{
+     height: 35px;
+     
+     border: solid 1px silver; 
+     color: #B3B3B3;
+     font-size: 18px;
+     padding-left: 15px;
+     line-height: 10px;
+
+
+    }

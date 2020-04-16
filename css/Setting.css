@@ -1,4 +1,4 @@
- body {
+body {
      background: #c7b39b url("C:/Users/Doomed/Desktop/Diplom/DND/img/mr.jpg"); /* Цвет фона и путь к файлу */
      background-size:550px; 
    }
@@ -87,6 +87,3 @@ min-width: 1590px;
 .PhotoClass{
   
 }
-
-
-

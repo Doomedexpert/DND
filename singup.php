@@ -44,11 +44,13 @@ require "./db.php";
  		$user -> email =$data['email'];
  		$user -> password = md5($data['password']);
  		R::store($user);
- 		echo '<div style=" color: green;">Так же просто, как и технологично</div><hr>';
- 	} 
+ 		echo '<div class="Text">Вы успешно зарегестрировались! </div><hr>';
+ 		$text1 ="Ваш путь, полный приключений и опасностей только начинается! Перейдите на главную страницу, что бы продолжить.";
+ 		$text2 =2;
+ 		 	} 
  	else
  	{
-      echo '<div style=" color: red;">'.array_shift($errors).'</div><hr>';
+      echo '<div class="Text">'.array_shift($errors).'</div><hr>';
       
  	}
  }
@@ -60,7 +62,7 @@ require "./db.php";
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Главная страница</title>
+	<title>Регистрация</title>
 	<link rel="stylesheet" href="./css/Main.css">
 	<link rel="stylesheet" href="./css/font-famaly-p.css">
 	
@@ -68,43 +70,69 @@ require "./db.php";
 
 </head>
 <body>
-	<div class="BgRamka">
-		<div class="RegConteiner" style="margin-left: 100px;">
+	<div class="BgRamka" style=" margin-left: 550px; margin-right: 550px; padding: 10px; margin-top: 100px;">
+		<div class="RegConteiner" >
+			<div style="margin-left: 50px;margin-right: 50px;">
 			
 		
 	
 <form action="./singup.php" method="POST">
-<p>
-	Ваш логин<br>
-	<input type="text" name="login" autocomplete="off" value="<?php echo @$data['login'] ?>">
+<p class="Text" style="text-align: center;">
+	Введите логин<br>
+	<input class="InputTextBox" type="text" name="login" autocomplete="off" value="<?php echo @$data['login'] ?>">
 </p>
 
-<p>
-	Ваш Email<br>
-	<input type="Email" name="email" autocomplete="off" value="<?php echo @$data['email'] ?>">
+<p class="Text" style="text-align: center;">
+	Введите ваш Email<br>
+	<input class="InputTextBox" type="Email" name="email" autocomplete="off" value="<?php echo @$data['email'] ?>">
 </p>
 
-<p>
-	Ваш пароль<br>
-	<input type="password" name="password" autocomplete="off" value="<?php echo @$data['password'] ?>">
+<p class="Text" style="text-align: center;">
+	Введите пароль<br>
+	<input  class="InputTextBox" type="password" name="password" autocomplete="off" value="<?php echo @$data['password'] ?>">
 </p>
 
-<p>
+<p class="Text" style="text-align: center;">
 	Повторите пароль<br>
-	<input type="password" name="password_2" autocomplete="off" value="<?php echo @$data['password_2'] ?>">
+	<input class="InputTextBox" type="password" name="password_2" autocomplete="off" value="<?php echo @$data['password_2'] ?>">
 </p>
 
-<p>
-	<button type="submit" name="do_singup">Зарегестрироваться</button>
+<p class="Text" style="text-align: center;">
+	<button class="Btn" type="submit" name="do_singup">Зарегестрироваться</button>
 </p>
+
+
+
+ 	
 
  </form>
-
+				</div>
 
  		</div>
+
 		
  </div>
 
+
+ <?php
+if($text2==2)
+{
+
+echo 
+'<div class="BgRamka" style=" margin-left: 550px; margin-right: 550px; padding: 10px; margin-top: 20px;">
+ 	<div class="RegConteiner2 Text" >
+
+ 		<p style="margin-top: 10px;">Ваш путь, полный приключений и опасностей только начинается! Перейдите на страницу авторизации, что бы продолжить.
+ 		</p>
+ 	 <p class="Text" style="text-align: center;">
+ 	 <a href="./login.php">
+	<button class="Btn" type="submit" action="./index.php">Авторизация</button>
+	</a>
+    </p>
+ 	</div>
+</div>';
+}
+?>
 
 </body>
 </html>

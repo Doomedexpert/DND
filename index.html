@@ -6,7 +6,7 @@ require "./db.php";
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>IgroteyRPGame</title>
+  <title>Главная страница</title>
   <link rel="stylesheet" href="./css/Main.css">
   <link rel="stylesheet" href="./css/font-famaly-p.css">
   <link rel="stylesheet" href="./css/Details.css">
@@ -15,15 +15,12 @@ require "./db.php";
 
 	<!-- Главый контйнер который держит это всё -->
 	<div class="mainMAINBORDER">
-<div class="Header">
-        <img style="margin-top: 5px; float: left;" src="./img/Igrotey.jpg">   
-         <p class="Text" style="font-size: 40px;float: left; ;">IgroteRPGame</p>   
-</div>
+
    
   
 
 		<!-- Каменная рамка -->
-<div class="BgRamka" style=" width: 240px; height: 776px; float: left;">
+<div class="BgRamka" style="padding: 10px; width: 240px; height: 776px; float: left;">
 	<!-- Левая панель управления с кнопками навигации -->
 	<div class="leftConteiner">
 
@@ -31,7 +28,7 @@ require "./db.php";
 		<!-- Очень нужная таблица-контейнер для левой панели -->
 		<a href="./myGames.html">
 			<div class="Buttonleft" style="line-height: 100px;"> 
-    		    <div class="leftContU" style="width: 170px;height: 75px;">
+    		    <div style="width: 170px;height: 75px; background: rgba(0,0,0,0.3);">
     				<img style="width: 150px;" src="./img/MyGames.png" alt="Мои игры">
     			</div>
   			 </div>
@@ -40,20 +37,20 @@ require "./db.php";
   <!-- Кнопка Создать игру -->
   <a href="./createGame.html">
  			<div class="Buttonleft" style="line-height: 95px;"> 
-  				<div class="leftContU" style="width: 170px;height: 75px;">
+  				<div style="width: 170px;height: 75px; background: rgba(0,0,0,0.3);">
     				<img style="width: 150px;" src="./img/CreateGames.png" alt="Создать игру">
     			</div>
     		</div>
     </a>
   <!-- Кнопка Мои персонажи -->
 			<div class="Buttonleft" style="line-height: 95px;"> 
- 				<div class="leftContU" style="width: 170px;height: 75px;">
+ 				<div style="width: 170px;height: 75px; background: rgba(0,0,0,0.3);">
     				<img style="width: 150px;" src="./img/MyPers.png" alt="Создать игру">
     			</div>
     		</div>
   <!-- Кнопка Создать персонажа -->
   			<div class="Buttonleft" style="line-height: 85px;"> 
-  				<div class="leftContU" style="width: 170px;height: 75px;">
+  				<div style="width: 170px;height: 75px; background: rgba(0,0,0,0.3);">
     				<img style="width: 150px;" src="./img/CreatePers.png" alt="Создать игру">
     			</div>
     		</div>
@@ -62,14 +59,14 @@ require "./db.php";
 if (isset($_SESSION['logged_user'])) : ?>
         <!-- Кнопка Мой Профиль -->
         <div class="Buttonleft" style="margin-top: 140px;"> 
-          <div class="leftContU" style="width: 170px;height: 75px;">
+          <div style="width: 170px;height: 75px; background: rgba(0,0,0,0.3);">
             <img style="width: 150px;  margin-top: 20px;" src="./img/Profile.png" alt="Профиль">
           </div>
         </div>
 
     <a href="./logout.php">
         <div class="Buttonleft"> 
-          <div class="leftContU" style="width: 170px;height: 75px;">
+          <div style="width: 170px;height: 75px; background: rgba(0,0,0,0.3);">
             <img style="width: 150px;  margin-top: 20px;" src="./img/Exit.png" alt="Выйти">
           </div>
         </div>
@@ -80,7 +77,7 @@ else : ?>
         <!-- Регистрация -->
       <a href="./singup.php">
         <div class="Buttonleft" style="line-height: 85px;"> 
-          <div class="leftContU" style="width: 170px;height: 75px;">
+          <div style="width: 170px;height: 75px; background: rgba(0,0,0,0.3);">
             <img style="width: 150px;" src="./img/Reg.png" alt="Регистрация">
           </div>
         </div>
@@ -89,7 +86,7 @@ else : ?>
          <!-- Авторизация -->
       <a href="./login.php">
         <div class="Buttonleft" style="line-height: 85px;"> 
-          <div class="leftContU" style="width: 170px;height: 75px;">
+          <div style="width: 170px;height: 75px; background: rgba(0,0,0,0.3);">
             <img style="width: 150px;" src="./img/Auto.png" alt="Авторизация">
           </div>
         </div>
@@ -100,7 +97,7 @@ else : ?>
 	</div>
 </div>
 <!-- Каменная рамка -->
-<div class="BgRamka" style="width: 1190px; height: 230px; float: left;">
+<div class="BgRamka" style="padding: 10px; width: 1190px; height: 230px; float: left;">
 	<!-- Верхний контейнер -->
 	<div class="topConteiner">
 		<table class="TableTop">
@@ -117,7 +114,7 @@ else : ?>
 </div>
 
 <!-- Всё та же каменная рамка.... -->
-<div class="BgRamka" style="width: 1190px; height: 480px; float: left;">
+<div class="BgRamka" style="padding: 10px; width: 1190px; height: 480px; float: left;">
 	<!-- Центральный контейнер для информации(может показывыть персов) -->
 	<div class="centerConteiner">
         
@@ -237,13 +234,13 @@ else : ?>
    	</div>
    </div>
 <div class="TextUnderPhotoCenterConteiner" style="margin-bottom: 10px; margin-left: 50px; margin-right: 10px;">
-	<a href="./Races.php">
-    <div class="TextUnderPhotoCenter"> 
-      <div class="TextShadowBox" style="line-height: 110px;">
-        <img style="width: 120px; " src="./img/Race.png" alt="Расы">
-      </div>                
-    </div>
-  </a>
+	<a href="./races.html">
+		<div class="TextUnderPhotoCenter"> 
+			<div class="TextShadowBox" style="line-height: 110px;">
+				<img style="width: 120px; " src="./img/Race.png" alt="Расы">
+			</div>			      		
+		</div>
+	</a>
 </div>
 <div class="TextUnderPhotoCenterConteiner" style="margin-bottom: 10px; margin-left: 10px; margin-right: 10px;">
 	<a href="./classes.html">

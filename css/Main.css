@@ -6,6 +6,7 @@
    .mainMAINBORDER{
 
 min-width: 1590px;
+max-width: 1590px;
    }
 
    .Header{
@@ -238,27 +239,30 @@ min-width: 1590px;
   background: rgba(0,0,0,0.9);
 }
 
-/*                          Создание персонажа                      */
-/*                          Создание персонажа                      */
-/*                          Создание персонажа                      */
-/*                          Создание персонажа                      */
-/*                          Создание персонажа                      */
-/*                          Создание персонажа                      */
+/*                          Создание персонажа  | выбор класса                    */
+/*                          Создание персонажа  | выбор класса                    */
+/*                          Создание персонажа  | выбор класса                    */
+/*                          Создание персонажа  | выбор класса                    */
+/*                          Создание персонажа  | выбор класса                    */
+/*                          Создание персонажа  | выбор класса                    */
+
+
+
 
 .DMainCont{
   background: url("https://i.imgur.com/Q2QJbwB.jpg");
     background-size:100px;
     margin: 20px;
    width: 1345px;
-   height: 1550px;
+   height: 1900px;
    border: 3px solid #2a1d13!important;
    font-family: 'Underdog', cursive;
 }
 
 .DMainCont-SB{
-   background: rgba(0,0,0,0.4);
+   background: rgba(0,0,0,0.0);
    width: 1341px;
-   height: 1546px;
+   height: 1346px;
 }
 .BgRamka-1{
   background: url("https://i.imgur.com/cTQz9m9.jpg");
@@ -277,6 +281,8 @@ min-width: 1590px;
     margin-left: 20px;
     margin-right: 20px;
      border: 3px solid #2a1d13!important;
+
+
 }
 
 
@@ -285,24 +291,27 @@ display: inline-block;
    background: url("https://i.imgur.com/cTQz9m9.jpg");
     background-size:100px;
     float: left;
-    width: 270px;
-    height: 350px;
-   
+    width: 250px;
+    height: 480px;;
+    box-shadow: 1px 1px 3px 2px rgba(0,0,0,0.9)!important;
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 24px;
     margin-right: 20px;
-     border: 3px solid #2a1d13!important;
-     padding: 5px;
+    border: 3px solid #2a1d13!important;
+    padding: 5px;
+
      
 }
 
 .ContBlock-1{
-  display: none;
-  background: red;
-   width: 255px;
-   height: 240px;
-   padding-left: 10px;
-   padding-right: 10px;
+  display: block;
+  
+   width: 225px;
+  height: 240px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-block-start: 0px!important;
+
    
  }
 
@@ -311,9 +320,11 @@ display: inline-block;
 .ContBlock:hover .ContBlock-1 {
   display: block;
   background: rgba(0,0,0,0.4);
-  border: 3px solid #2a1d13!important;
-   width: 255px;
-   height: 240px;
+  width: 225px;
+  height: 240px;
+  border: 1px solid #2a1d13!important;
+
+  
   
 
 }
@@ -321,14 +332,193 @@ display: inline-block;
 .ContBlock:hover{
  
    transform: scale(1.5);
-  
+   
+
 
 
 }
 
+/*                          Создание персонажа  | выбор расы                    */
+/*                          Создание персонажа  | выбор расы                    */
+/*                          Создание персонажа  | выбор расы                    */
+/*                          Создание персонажа  | выбор расы                    */
+/*                          Создание персонажа  | выбор расы                    */
+/*                          Создание персонажа  | выбор расы                    */
 
 
 
 
+.ContBlock-R{
+   display: inline-block;
+   background: url("https://i.imgur.com/cTQz9m9.jpg");
+    background-size:100px;
+    float: left;
+    width: 250px;
+    height: 450px;
+    box-shadow: 1px 1px 3px 2px rgba(0,0,0,0.9)!important;
+    margin-bottom: 10px;
+    margin-left: 24px;
+    margin-right: 20px;
+    border: 3px solid #2a1d13!important;
+    padding: 5px;
 
+     
+}
+
+.ContBlock-R:hover .ContBlock-11 {
+  display: block;
+  background: rgba(0,0,0,0.4);
+  width: 247px;
+  height: 240px;
   
+  
+  
+
+}
+
+.ContBlock-R:hover{
+ 
+   transform: scale(1.5);
+
+  }
+
+.ContBlock-11{
+  display: block;
+  
+   width: 225px;
+  height: 340px;
+ 
+
+
+   
+ }
+
+ 
+
+
+.ContBlock-12{ /*Текст*/
+  display: block;
+
+   width: 225px;
+  height: 240px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+ 
+  border: 1px solid #2a1d13!important;
+
+   
+ }
+ .ContBtn{
+  
+  
+
+ }
+
+.Btn-Race
+{
+  margin-top: 2px;
+  font-size: 15px!important;
+  border: 3px solid #2a1d13!important;
+  width: 247px;
+  height: 35px;
+  color: #B3B3B3;
+  font-size: 20px;
+  font-family: 'Underdog';
+  background: rgba(0,0,0,0.5);
+}
+
+
+.Btn-Race:hover
+{
+  
+  font-size: 18px!important;
+  border: -3px solid #2a1d13!important;
+  width: 247px;
+  color: #B3B3B3;
+  font-size: 20px;
+  font-family: 'Underdog';
+  background: rgba(0,0,0,0.9);
+}
+
+
+/*                          Создание персонажа  | выбор второстепенных штук                    */
+/*                          Создание персонажа  | выбор второстепенных штук                    */
+/*                          Создание персонажа  | выбор второстепенных штук                    */
+/*                          Создание персонажа  | выбор второстепенных штук                    */
+/*                          Создание персонажа  | выбор второстепенных штук                    */
+/*                          Создание персонажа  | выбор второстепенных штук                    */
+
+.BlockName{
+  float: left;
+  height: 500px;
+  width: 300px;
+  background: url("https://i.imgur.com/cTQz9m9.jpg");
+     background-size:auto;
+     border: 3px solid #2a1d13!important;
+     box-shadow: 1px 1px 3px 2px rgba(0,0,0,0.9)!important;
+  margin: 20px;
+  padding: 10px;
+}
+
+.BlockHit{
+  float: left;
+  height: 705px;
+  width: 350px;
+   background: url("https://i.imgur.com/cTQz9m9.jpg");
+     background-size:auto;
+     border: 3px solid #2a1d13!important;
+     box-shadow: 1px 1px 3px 2px rgba(0,0,0,0.9)!important;
+  margin: 20px;
+  padding: 10px;
+}
+.BlockInfo{
+  float: left;
+  height: 705px;
+  width: 400px;
+  background: url("https://i.imgur.com/cTQz9m9.jpg");
+     background-size:auto;
+     border: 3px solid #2a1d13!important;
+     box-shadow: 1px 1px 3px 2px rgba(0,0,0,0.9)!important;
+  margin: 20px;
+  padding: 10px;
+}
+
+.BlockCont{
+ background: url("https://i.imgur.com/Q2QJbwB.jpg");
+ background-size: 100px;
+  border: 3px solid #2a1d13!important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6) inset; 
+
+}
+
+ .InputTextBox-CrCr{
+    margin: 5px;
+    width: 285px;
+    background: rgba(0,0,0,0.5);
+    border: 3px solid #2a1d13!important;
+    color: #B3B3B3;
+    font-size: 20px;
+    font-family: 'Underdog';
+   }
+
+.InputTextArea{
+  min-width: 1085px;
+  max-width: 1085px;
+  min-height: 400px;
+  max-height: 400px;
+    margin: 25px;
+    width: 1085px;
+    height: 400px;
+    background: rgba(0,0,0,0.5);
+    border: 3px solid #2a1d13!important;
+    color: #B3B3B3;
+    font-size: 20px;
+    font-family: 'Underdog';
+    text-align: center;
+   }
+
+  .container1 {
+  display: flex;
+  flex-direction: column;
+}

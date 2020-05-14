@@ -29,6 +29,7 @@ require "./db.php";
 
 
 		<!-- Очень нужная таблица-контейнер для левой панели -->
+<?php if (isset($_SESSION['logged_user'])) : ?>
 		<a href="./myGames.html">
 			<div class="Buttonleft" style="line-height: 100px;"> 
     		    <div class="leftContU" style="width: 170px;height: 75px;">
@@ -36,7 +37,7 @@ require "./db.php";
     			</div>
   			 </div>
   		 </a>
-  
+ 
   <!-- Кнопка Создать игру -->
   <a href="./createGame.html">
  			<div class="Buttonleft" style="line-height: 95px;"> 
@@ -58,8 +59,7 @@ require "./db.php";
     			</div>
     		</div>
 
-<?php
-if (isset($_SESSION['logged_user'])) : ?>
+
         <!-- Кнопка Мой Профиль -->
         <div class="Buttonleft" style="margin-top: 140px;"> 
           <div class="leftContU" style="width: 170px;height: 75px;">
